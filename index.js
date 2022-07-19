@@ -5,11 +5,13 @@ import cors from 'cors';
 
 import mongoose from 'mongoose';
 
+
 import { registerValidation, loginValidation, postCreateValidation } from './validations.js';
 
 import { handleValidationErrors, checkAuth } from './utils/index.js';
 
-import { UserController, PostController } from './controllers/index.js';
+import { UserController, PostController } from './controllers/index.js'
+
 
 mongoose
   .connect(process.env.MONGODB_URI)
